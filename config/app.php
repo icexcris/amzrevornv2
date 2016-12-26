@@ -179,6 +179,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Ipunkt\LaravelAnalytics\AnalyticsServiceProvider::class,
+        Spatie\CookieConsent\CookieConsentServiceProvider::class,
 
     ],
 
