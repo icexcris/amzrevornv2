@@ -18,3 +18,8 @@ footer{
 .navbar-default{
 	background-color: #46A28D;
 }
+.btn-site {
+  color: #FFFFFF;
+  background-color: #46a28d;
+  border-color: none;
+}

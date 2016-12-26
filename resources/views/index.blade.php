@@ -19,7 +19,7 @@
                                 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
                             </p>
                             <p>
-                                <a class="btn btn-primary" href="#">Read more</a> <a class="btn" href="#">Read more</a>
+                                <a class="btn btn-site" href="#">Read more</a> 
                             </p>
                         </div>
                     </div>
@@ -35,7 +35,7 @@
                                 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
                             </p>
                             <p>
-                                <a class="btn btn-primary" href="#">Read more</a> <a class="btn" href="#">Read more</a>
+                                <a class="btn btn-site" href="#">Read more</a> 
                             </p>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                                 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
                             </p>
                             <p>
-                                <a class="btn btn-primary" href="#">Read more</a> <a class="btn" href="#">Read more</a>
+                                <a class="btn btn-site" href="#">Read more</a> 
                             </p>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                                 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
                             </p>
                             <p>
-                                <a class="btn btn-primary" href="#">Read more</a> <a class="btn" href="#">Read more</a>
+                                <a class="btn btn-site" href="#">Read more</a> 
                             </p>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
                                 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
                             </p>
                             <p>
-                                <a class="btn btn-primary" href="#">Read more</a> <a class="btn" href="#">Read more</a>
+                                <a class="btn btn-site" href="#">Read more</a> 
                             </p>
                         </div>
                     </div>
@@ -104,7 +104,7 @@
                                 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
                             </p>
                             <p>
-                                <a class="btn btn-primary" href="#">Read more</a> <a class="btn" href="#">Read more</a>
+                                <a class="btn btn-site" href="#">Read more</a> 
                             </p>
                         </div>
                     </div>
@@ -125,7 +125,7 @@
                                 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
                             </p>
                             <p>
-                                <a class="btn btn-primary" href="#">Read more</a> <a class="btn" href="#">Read more</a>
+                                <a class="btn btn-site" href="#">Read more</a> 
                             </p>
                         </div>
                     </div>
@@ -141,7 +141,7 @@
                                 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
                             </p>
                             <p>
-                                <a class="btn btn-primary" href="#">Read more</a> <a class="btn" href="#">Read more</a>
+                                <a class="btn btn-site" href="#">Read more</a> 
                             </p>
                         </div>
                     </div>
@@ -157,7 +157,7 @@
                                 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
                             </p>
                             <p>
-                                <a class="btn btn-primary" href="#">Read more</a> <a class="btn" href="#">Read more</a>
+                                <a class="btn btn-site" href="#">Read more</a> 
                             </p>
                         </div>
                     </div>
@@ -165,7 +165,6 @@
             </div>
         </div>
         <div class="col-md-3">
-        <div class="row">
             <h3>
                 Recent Posts
             </h3>
@@ -251,7 +250,6 @@
                 </li>
             </ul>
         </div>
-    </div>
     </div>
 </div>
 @endsection
