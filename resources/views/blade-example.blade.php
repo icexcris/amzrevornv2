@@ -1,5 +1,4 @@
-@extends('master')
-
+@extends('layouts.master')
 @section('header')
   <nav>
     <ul class="nav nav-pills pull-right">

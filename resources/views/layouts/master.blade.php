@@ -1,6 +1,8 @@
+ @extends('layouts.top_nav')
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
 <!-- Cookie Law -->
   @include('cookieConsent::index')
   <!-- Font Awosome -->
@@ -32,7 +34,7 @@
 
     <div class="container">
       <div class="header clearfix">
-          @yield('header')
+           @extends('layouts.top_nav')
       </div>
 
       <div class="jumbotron">
