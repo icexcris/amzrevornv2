@@ -9,6 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href=" {{asset('css\font-awesome.css')}}" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
         <style>
@@ -84,6 +85,7 @@
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <i class="fa fa-etsy" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
