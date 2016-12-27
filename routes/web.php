@@ -23,3 +23,7 @@ Route::get('/test', function () {
     return view('blade-example');
 });
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

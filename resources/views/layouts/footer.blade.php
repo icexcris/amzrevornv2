@@ -8,7 +8,6 @@
 		Follow us: 
 </div>
 		 <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-facebook"><i class="fa fa-facebook"></i></a>
-        <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-flickr"><i class="fa fa-flickr"></i></a>
         <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-google-plus"><i class="fa fa-google-plus"></i></a>
         <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-instagram"><i class="fa fa-instagram"></i></a>
         <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-pinterest"><i class="fa fa-pinterest"></i></a>
@@ -16,7 +15,7 @@
         <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-twitter"><i class="fa fa-twitter"></i></a>
         <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-youtube"><i class="fa fa-youtube"></i></a>
 
-                    </div>
+              </div>
 
 
 
