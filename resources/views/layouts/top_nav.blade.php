@@ -12,10 +12,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
- <ul class="list-inline">
-    <li><img src="//placehold.it/150x50"></li>
-    <li><p>My text</p></li>
-  </ul>
+     
+
+     <i class="fa fa-buysellads" style="font-size:48px;color:#FFFFFF"></i>
+      &nbsp;
 
       </div>
 
