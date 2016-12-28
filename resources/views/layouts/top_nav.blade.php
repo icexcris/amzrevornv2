@@ -13,7 +13,7 @@
         <span class="icon-bar"></span>
       </button>
      
-
+&nbsp;
      <i class="fa fa-buysellads" style="font-size:48px;color:#FFFFFF"></i>
       &nbsp;
 
