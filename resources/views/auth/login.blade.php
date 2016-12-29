@@ -58,6 +58,7 @@
                             
 
                             <div class="col-md-4 col-md-offset-4">
+                            ><i class="fa fa-user"></i>
                                 <input placeholder="Email" id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
 
                                 @if ($errors->has('email'))
