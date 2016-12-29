@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
   @include('cookieConsent::index')
+  <link rel="shortcut icon" type="image/png" href="{{asset('images/fav.ico')}}"/>
   <link href=" {{asset('css\font-awesome.css')}}" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
