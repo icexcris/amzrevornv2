@@ -7,7 +7,8 @@
             <div class="panel panel-white post panel-shadow">
                 <div class="post-heading">
                  <a href="{{ url('/showphoto') }}" >
-                     <h4>Foto title</h4>
+                 
+                     <h4>Foto title</h4> 
                      </a>
                     <div class="pull-left meta">
                         <h6 class="text-muted time">5 seconds ago</h6>

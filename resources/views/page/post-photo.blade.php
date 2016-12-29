@@ -3,21 +3,30 @@
 
 <div class="container bootstrap snippet">
     <di class="col-md-8">
-        <div class="col-sm-12">
+        <div class="row">
+      
             <div class="panel panel-white post panel-shadow">
-                <div class="post-heading">
-                    <div class="pull-left image">
-                        <img src="http://bootdey.com/img/Content/user_1.jpg" class="img-circle avatar" alt="user profile image">
-                    </div>
-                    <div class="pull-left meta">
-                        <div class="title h5">
-                        <h4>Foto title</h4>
-                            <a href="#"><b>By Brian cartelly</b></a>
-                            
+             <div class="col-md-9">
+                    <div class="post-heading">
+                        <div class="pull-left meta">
+                            <div class="title h5">
+                            <h4>Foto title</h4><a href="#"><b>By Brian cartelly</b></a></div>
+                            <h6 class="text-muted time">5 seconds ago</h6>
                         </div>
-                        <h6 class="text-muted time">5 seconds ago</h6>
+                    </div>                                 
+                </div>
+
+                <div class="col-md-1">
+                    <div class="post-heading">
+                        <button href="#" type="button" class="btn btn-md btn-info"><i class="fa fa-arrow-left fa-2x"></i></button>
                     </div>
                 </div>
+                <div class="col-md-1">
+                <div class="post-heading">
+                     <button href="#" type="button" class="btn btn-md btn-site"><i class="fa fa-arrow-right fa-2x"></i></button>  
+                      </div>                    
+                </div>  
+
                 <div class="post-image">
                     <img src="http://lorempixel.com/400/200/city/2/" class="image" alt="image post">
                 </div>

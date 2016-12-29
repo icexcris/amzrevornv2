@@ -1,4 +1,11 @@
+body{
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 180px;    
+}
 footer{
+    position: absolute;
+    bottom: 0px;
 	background: #46A28D;
 }
 
@@ -163,6 +170,13 @@ body {
 background-color: #E9EBEE;
 }
 
+aside .well{
+    padding: 20px;
+    background: white;
+    border: 0;
+    box-shadow: none;
+}
+
 
 .footer-distributed{
     background-color: #46A28D;
@@ -172,7 +186,7 @@ background-color: #E9EBEE;
     text-align: left;
     font: normal 16px sans-serif;
 
-    padding: 45px 50px;
+    padding: 45px 50px 65px 50px;
     margin-top: 80px;
 }
 
@@ -378,3 +392,9 @@ background-color: #E9EBEE;
 .post .post-footer .comments-list .comment > .comments-list {
   margin-left: 50px;
 }                    
+
+@media(min-width: 320px) and (max-width: 800px){
+    .btn-block{
+        margin-bottom: 10px;
+    }
+}
