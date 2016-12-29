@@ -1,13 +1,54 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="container">
+
+    <div class="container-fluid">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+        <div class="col-md-12">
+             <h3 class="text-center"> <a href="{{ url('/login') }}">Login</a> or Sign up</h3>
+             &nbsp;
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-4">
+                             
+                            <button type="button" class="btn btn-lg btn-info btn-block">
+                                Twitter
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                             
+                            <button type="button" class="btn btn-lg btn-danger btn-block">
+                                Google+
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                             
+                            <button type="button" class="btn btn-lg btn-primary btn-block">
+                                Facebook
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center">
+                        OR
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                
+
+                 <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -69,8 +110,23 @@
                         </div>
                     </form>
                 </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                </div>
             </div>
         </div>
     </div>
 </div>
+   
+        
+            
+                
+                   
+               
+           
+       
 @endsection
+

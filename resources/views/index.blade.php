@@ -194,6 +194,10 @@
                     Eget porttitor lorem
                 </li>
             </ol>
+
+
+<h2 class="widget-title"><span>Stay Connected</span></h2><aside id="ft_social-1" class="widget social_widget"><div class="sidebar-social"><div id="menu-social" class="menu"><ul id="menu-social-items" class="menu-items"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-142"><a title="Follow us on Twitter" target="_blank" href="http://twitter.com/famethemes/"><span class="screen-reader-text">Twitter</span></a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-143"><a href="http://facebook.com/famethemes/"><span class="screen-reader-text">Facebook</span></a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-145"><a href="http://plus.google.com"><span class="screen-reader-text">Google Plus</span></a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-144"><a href="http://vk.com"><span class="screen-reader-text">VK</span></a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146"><a href="http://tripadvisor.com/"><span class="screen-reader-text">Tripadvisor</span></a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-147"><a href="http://youtube.com"><span class="screen-reader-text">Youtube</span></a></li></ul></div></div>
+            
             <h3>
                 h3. Lorem ipsum dolor sit amet.
             </h3>
