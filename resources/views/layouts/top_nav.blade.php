@@ -23,11 +23,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="#"><i class="fa fa-home"></i> <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Funny</a></li>
-        <li><a href="#">Games</a></li>
-        <li><a href="#">IT</a></li>
-        <li><a href="#">Link</a></li>
+        <li><a href="{{ url('/news') }}">News</a></li>
+        <li><a href="{{ url('/photo') }}">Photos</a></li>
+        <li><a href="{{ url('/video') }}">Video</a></li>
         
       </ul>
       <form class="navbar-form navbar-left">

@@ -27,3 +27,21 @@ Route::get('/test', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/blog', function () {
+    return view('/page/post-blog');
+});
+
+Route::get('/news', function () {
+    return view('news');
+});
+Route::get('/showphoto', function () {
+    return view('/page/post-photo');
+});
+
+Route::get('/photo', function () {
+    return view('photo');
+});
+Route::get('/video', function () {
+    return view('video');
+});

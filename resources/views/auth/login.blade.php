@@ -1,9 +1,11 @@
 @extends('layouts.master')
 
 @section('content')
-
+<div class="panel panel-white post panel-shadow">
 <div class="container-fluid">
-    <div class="row">
+    
+
+
         <div class="col-md-12">
              <h3 class="text-center">Login or <a href="{{ url('/register') }}">Sign up</a></h3>
              &nbsp;
@@ -58,7 +60,7 @@
                             
 
                             <div class="col-md-4 col-md-offset-4">
-                            ><i class="fa fa-user"></i>
+
                                 <input placeholder="Email" id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
 
                                 @if ($errors->has('email'))

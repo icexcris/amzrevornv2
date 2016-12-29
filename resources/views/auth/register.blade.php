@@ -1,9 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
-
+<div class="panel panel-white post panel-shadow">
     <div class="container-fluid">
-    <div class="row">
+    
         <div class="col-md-12">
              <h3 class="text-center"> <a href="{{ url('/login') }}">Login</a> or Sign up</h3>
                  &nbsp;
