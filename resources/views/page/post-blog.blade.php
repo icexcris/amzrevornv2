@@ -37,14 +37,14 @@
         <div class="row">
         <div class="col-md-12">
     <div class="col-md-6">
-                    
-                        <button href="#" type="button" class="btn btn-md btn-info"><i class="fa fa-arrow-left fa-2x"></i></button>
-                  
+                    <div class="post-heading">
+                        <button href="#" type="button" class="btn btn-md btn-info pull-left"><i class="fa fa-arrow-left fa-2x"></i> Previous article</button>
+                    </div>
                 </div>
                 <div class="col-md-6">
-               
-                     <button href="#" type="button" class="btn btn-md btn-site"><i class="fa fa-arrow-right fa-2x"></i></button>  
-                                       
+                <div class="post-heading">
+                     <button href="#" type="button" class="btn btn-md btn-site pull-right">Next article <i class="fa fa-arrow-right fa-2x"></i></button>  
+                      </div>                    
                 </div>  
                 </div> 
                 </div>
