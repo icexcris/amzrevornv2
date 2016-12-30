@@ -16,22 +16,9 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-<<<<<<< HEAD
-Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
-=======
+
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
-
->>>>>>> origin/master
-Route::get('/home', 'HomeController@index');
-
-Route::get('/test', function () {
-    return view('blade-example');
-});
-
-
-Auth::routes();
-
 
 Route::get('/home', 'HomeController@index');
 
