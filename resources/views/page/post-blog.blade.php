@@ -33,12 +33,19 @@
                         <div class="addthis_inline_share_toolbox"></div>
                  </div>
                 </div>
+
+      <ul class="pager pageNav">
+        <li class="previous" ><a href="#"><span aria-hidden="true" class="btn btn-site"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> Older</a></li>
+        <li class="next"><a href="#">Newer <span aria-hidden="true"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></span></a></li>
+      </ul>
+    
                 <div class="post-footer">
                     <div class="input-group"> 
                         <input class="form-control" placeholder="Add a comment" type="text">
                         <span class="input-group-addon">
                             <a href="#"><i class="fa fa-edit"></i></a></span>
                     </div>
+
                     <ul class="comments-list">
                         <li class="comment">
                             <a class="pull-left" href="#">

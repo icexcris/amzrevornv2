@@ -1,5 +1,6 @@
  @extends('layouts.master')
 @section('content') 
+
 <div class="panel panel-white post panel-shadow">
 <div class="container-fluid">
       <div class="col-md-6 col-md-offset-3">

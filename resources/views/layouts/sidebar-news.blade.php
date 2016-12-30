@@ -3,6 +3,17 @@
             <div class="panel panel-white post panel-shadow">
                 <!-- Blog Search Well -->
                 <div class="well">
+
+
+ 
+    <!-- Subscribe to my feed widget -->
+    <div class="well text-center">
+        <p class="lead">
+            Don't want to miss updates? Please click the below button!
+        </p>
+        <button class="btn btn-site btn-lg">Subscribe to my feed</button>
+        <div>
+    <div class="well">
                     <h4>Blog Search</h4>
                     <div class="input-group">
                         <input type="text" class="form-control">
