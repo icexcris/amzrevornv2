@@ -34,10 +34,20 @@
                  </div>
                 </div>
 
-      <ul class="pager pageNav">
-        <li class="previous" ><a href="#"><span aria-hidden="true" class="btn btn-site"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> Older</a></li>
-        <li class="next"><a href="#">Newer <span aria-hidden="true"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></span></a></li>
-      </ul>
+        <div class="row">
+        <div class="col-md-12">
+    <div class="col-md-6">
+                    
+                        <button href="#" type="button" class="btn btn-md btn-info"><i class="fa fa-arrow-left fa-2x"></i></button>
+                  
+                </div>
+                <div class="col-md-6">
+               
+                     <button href="#" type="button" class="btn btn-md btn-site"><i class="fa fa-arrow-right fa-2x"></i></button>  
+                                       
+                </div>  
+                </div> 
+                </div>
     
                 <div class="post-footer">
                     <div class="input-group"> 
