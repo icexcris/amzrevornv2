@@ -45,6 +45,10 @@ Route::get('/photo', function () {
 Route::get('/video', function () {
     return view('video');
 });
+
+Route::get('/showvideo', function () {
+    return view('/page/post-video');
+});
 Route::get('/ck', function () {
     return view('ck');
 });
