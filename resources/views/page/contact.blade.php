@@ -1,5 +1,7 @@
- @extends('layouts.master')
+@extends('layouts.master')
 @section('content') 
+
+
 
 <div class="panel panel-white post panel-shadow">
 <div class="container-fluid">
@@ -46,5 +48,6 @@
       </div>
     </div>
 </div>
+
 
 @endsection
