@@ -24,7 +24,7 @@
 					·
 					<a href="#">Sitemaps</a>
 					·
-					<a href="#">Contact</a>
+					<a href="{{ asset('/contact') }}">Contact</a>
 				</p>
 
 				<p>Amuzament.net &copy; 2015</p>

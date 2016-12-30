@@ -1,6 +1,4 @@
-
-
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
  <div class="container-fluid">    
   
 
@@ -14,7 +12,7 @@
       </button>
      
 &nbsp;
-     <i class="fa fa-buysellads" style="font-size:48px;color:#FFFFFF"></i>
+    <a href="/"> <i class="fa fa-buysellads" style="font-size:48px;color:#FFFFFF"></i></a>
       &nbsp;
 
       </div>
@@ -26,16 +24,31 @@
         <li><a href="{{ url('/news') }}">News</a></li>
         <li><a href="{{ url('/photo') }}">Photos</a></li>
         <li><a href="{{ url('/video') }}">Video</a></li>
+
+        <li class="dropdown social-menu">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-share-alt"></i> FOLLOW US</a>
+          <ul class="dropdown-menu">
+            <li class="top-fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li class="top-tw"><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li class="top-gp"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li class="top-yt"><a href="#"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown search-menu">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search"></i> SEARCH</a>
+          <ul class="dropdown-menu">
+          <li>
+            <form action="">
+              <input type="text" class="form-control" placeholder="Search">
+              <button type="submit" class="btn btn-site">Submit</button>
+            </form>
+          </li>
+            
+          </ul>
+        </li>
         
       </ul>
-      <form class="navbar-form navbar-left">
-        <i class="fa fa-search"></i> SEARCH
-        <i class="fa fa-share-alt"></i> FOLLOW US
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
       <ul class="nav navbar-nav navbar-right">
 
         <li><a href="{{ url('/login') }}">Login</a></li>

@@ -105,7 +105,7 @@
             </div>
         </div>
     </di>
-     @include('layouts.sidebar')
+     @include('layouts.sidebar-video')
 </div>
 @endsection
 @section('scripts')

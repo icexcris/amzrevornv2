@@ -52,6 +52,8 @@
                      
                 </div>
                 <div class="post-footer">
+                <img src="{{ asset('/images/unnamed.png') }}" alt="Smiley face" class="img img-responsive">
+                <hr>
                     <div class="input-group"> 
                         <input class="form-control" placeholder="Add a comment" type="text">
                         <input type="file" id="fileupload" class="hide" name="compic">
@@ -105,7 +107,7 @@
             </div>
         </div>
     </di>
-     @include('layouts.sidebar')
+     @include('layouts.sidebar-photo')
 
 
 

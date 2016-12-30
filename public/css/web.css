@@ -2,6 +2,7 @@ body{
     position: relative;
     min-height: 100vh;
     padding-bottom: 180px;    
+    padding-top: 80px;
 }
 footer{
     position: absolute;
@@ -19,17 +20,23 @@ footer{
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
 	color: #46A28D!important;
-	font-weight: 600;
+	/*font-weight: 600;*/
 }
 
 .navbar-default{
 	background-color: #46A28D;
+    border-radius: 0;
 }
 .btn-site {
   color: #FFFFFF;
   background-color: #46a28d;
   border-color: none;
 }
+.btn-site:hover, .btn-site:active, .btn-site:focus{
+  background-color: #387f6f;
+  color:#fff;
+}
+
 
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
@@ -405,4 +412,72 @@ aside .well{
     .btn-block{
         margin-bottom: 10px;
     }
+}
+.social-menu ul li{
+  display: inline-block;
+  float: left;
+}
+.social-menu ul {
+  width: 230px;
+
+}
+
+.social-menu ul li a{
+  color:#ccc!important;
+}
+.top-yt a i {
+  color: #E62117;
+}
+.top-fb a i {
+  color: #3B5998;
+}
+.top-tw a i {
+  color: #1DA1F2;
+}
+.top-gp a i {
+  color: #DB4437;
+}
+
+nav {
+  box-shadow: 0 5px 8px -1px rgba(0, 0, 0, 0.2);
+
+}
+.navbar-default{
+  border-color:#46A28D;
+}
+.footer-distributed
+{
+  box-shadow: 6px 5px 5px 6px rgba(0, 0, 0, 0.2);
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+  background-color: #fff;
+}
+.dropdown-menu{
+  border: none; 
+}
+.search-menu ul li{
+  display: inline-block;
+  float: left;
+}
+.search-menu ul {
+  width: 290px;
+
+}
+.search-menu ul input, .search-menu ul button{
+  display: inline-block;
+}
+.search-menu ul input{
+  max-width: 70%;
+  margin-left: 10px;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+  color: #46A28D;
+}
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+    background-color: #fff;
+}
+.navbar-default .navbar-toggle:hover {
+    border-color: #fff;
+    background-color:#E9EBEE;
 }

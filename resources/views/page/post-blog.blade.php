@@ -82,7 +82,7 @@
         </div>
     </di>
 
-@include('layouts.sidebar')
+@include('layouts.sidebar-news')
 
 
 

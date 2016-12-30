@@ -52,3 +52,6 @@ Route::get('/showvideo', function () {
 Route::get('/ck', function () {
     return view('ck');
 });
+Route::get('/contact', function () {
+    return view('/page/contact');
+});
