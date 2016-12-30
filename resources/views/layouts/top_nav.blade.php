@@ -55,7 +55,7 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         {{ Auth::user()->name }} <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="{{ url('/auth/logout') }}">Logout</a></li>
+                    <li><a href="{{ url('/logout') }}">Logout</a></li>
                   </ul>
                 </li>        @else
           <li><a href="{{ url('/login') }}">Login</a></li>
