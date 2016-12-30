@@ -3,15 +3,9 @@
             <div class="panel panel-white post panel-shadow">
                 <!-- Blog Search Well -->
                 <div class="well">
-
-
- 
-    <!-- Subscribe to my feed widget -->
-    <div class="well text-center">
-        <p class="lead">
-            Don't want to miss updates? Please click the below button!
-        </p>
-        <button class="btn btn-site btn-lg">Subscribe to my feed</button>
+                <h4 class="text-center">Don't want to miss updates? Please click the below button!</h4>
+        <button class="btn btn-site btn-lg center-block">Subscribe to my feed</button>
+         </div>
         <div>
     <div class="well">
                     <h4>Blog Search</h4>
@@ -71,6 +65,8 @@
                         <li>Eget porttitor lorem</li>
                     </ol>                  
                 </div>
+            </div>
+           
             </div>
       </aside>
 </div>
