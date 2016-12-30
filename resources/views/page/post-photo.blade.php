@@ -54,8 +54,13 @@
                 <div class="post-footer">
                     <div class="input-group"> 
                         <input class="form-control" placeholder="Add a comment" type="text">
+                        <input type="file" id="fileupload" class="hide" name="compic">
                         <span class="input-group-addon">
-                            <a href="#"><i class="fa fa-edit"></i></a>  
+                            <!-- <label for="" class="comm-picc-btn">
+                                <input type="file" name='pic' class="comm-pic">
+                                <i class="fa fa-edit"></i>
+                            </label> -->
+                            <a href="#" id="trigFI"><i class="fa fa-edit"></i></a>  
                         </span>
                     </div>
                     <ul class="comments-list">
@@ -186,4 +191,14 @@
 
    </div>
 </div>
+@endsection
+@section('scripts')
+<script>
+    $('#trigFI').on('click', function(e){
+        e.preventDefault();
+        $('#fileupload').trigger('click'); 
+        return false;
+    });
+    
+</script>
 @endsection

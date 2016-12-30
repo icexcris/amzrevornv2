@@ -177,6 +177,14 @@ aside .well{
     box-shadow: none;
 }
 
+/*.comm-picc-btn{
+    width: 15px;
+    height: 15px;
+    opacity: 0;
+}
+.comm-picc-btn input:after{
+    content: '/';
+}*/
 
 .footer-distributed{
     background-color: #46A28D;
