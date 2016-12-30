@@ -180,6 +180,7 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         Ipunkt\LaravelAnalytics\AnalyticsServiceProvider::class,
         Spatie\CookieConsent\CookieConsentServiceProvider::class,
+        Unisharp\Ckeditor\ServiceProvider::class,
 
     ],
 
