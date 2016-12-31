@@ -3,14 +3,17 @@
 
 
 
-<div class="panel panel-white post panel-shadow">
-<div class="container-fluid">
-      <div class="col-md-6 col-md-offset-3">
- 
-          <form class="form-horizontal" action="" method="post">
+
+
+      <div class="col-md-8 col-md-offset-2">
+ <div class="container-fluid">
+ <div class="panel panel-white post panel-shadow">
+          
           <fieldset>
              <h3 class="text-center">Contact us</h3>
-        &nbsp;
+       <hr>
+        <div class="col-md-10 col-md-offset-1">
+       <form class="form-horizontal" action="" method="post">
     
             <!-- Name input-->
             <div class="form-group">
@@ -41,6 +44,7 @@
               <div class="col-md-12 text-right">
                 <button type="submit" class="btn btn-site btn-lg">Submit</button>
               </div>
+            </div>
             </div>
           </fieldset>
           </form>

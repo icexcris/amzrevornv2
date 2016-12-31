@@ -6,7 +6,7 @@
 
 <div class="panel panel-white post panel-shadow">
 <div class="container-fluid">
-    <h1>Edit Profile</h1>
+    <h1 class="text-center">Edit Profile</h1>
   	<hr>
 	<div class="row">
       <!-- left column -->
