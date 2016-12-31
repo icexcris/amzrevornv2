@@ -51,11 +51,44 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         @if(Auth::check())
-<li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        {{ Auth::user()->name }} <span class="caret"></span></a>
+        <li class="dropdown">
+
+
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="glyphicon glyphicon-user"></span> <strong> {{ Auth::user()->name }}</strong></a>
                   <ul class="dropdown-menu">
-                    <li><a href="{{ url('/logout') }}">Logout</a></li>
+                  <li>
+                            <div class="navbar-login">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <p class="text-center">
+                                            <span class="glyphicon glyphicon-user icon-size"></span>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="text-left"><strong>{{ Auth::user()->name }}</strong></p>
+                                        <p class="text-left small">{{ Auth::user()->email }}</p>
+                                        <p class="text-left">
+                                            <a href="{{ url('/profile') }}" class="btn btn-site btn-block btn-sm">Profile</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider navbar-login-session-bg"></li>
+                
+                  <li>
+                  <a href="#">Account Settings 
+                  <span class="glyphicon glyphicon-cog pull-right">
+                  </span>
+                  </a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                  <a href="{{ url('/logout') }}">Sign Out 
+                  <span class="glyphicon glyphicon-log-out pull-right">
+                  </span>
+                  </a>
+                  </li>
                   </ul>
                 </li>        @else
           <li><a href="{{ url('/login') }}">Login</a></li>

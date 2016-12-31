@@ -49,4 +49,6 @@ Route::get('/ck', function () {
 Route::get('/contact', function () {   
     return view('/page/contact');
 });
-
+Route::get('/profile', function () {   
+    return view('/page/profile');
+});

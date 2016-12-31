@@ -2,7 +2,7 @@
 @section('content') 
 
 <div class="container bootstrap snippet">
-    <di class="col-md-8">
+    <div class="col-md-8">
         <div class="row">
       
             <div class="panel panel-white post panel-shadow">
@@ -104,7 +104,7 @@
                 </div>
             </div>
         </div>
-    </di>
+    </div>
      @include('layouts.sidebar-video')
 </div>
 @endsection

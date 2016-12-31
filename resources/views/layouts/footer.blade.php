@@ -14,8 +14,7 @@
 			<div class="footer-left">
 
 				<p class="footer-links">
-					<a href="#">Contact</a>
-					·
+					
 					<a href="#">About us</a>
 					·
 					<a href="#">Privacy Policy</a>
