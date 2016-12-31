@@ -55,3 +55,6 @@ Route::get('/profile', function () {
 Route::get('/editprofile', function () {   
     return view('/page/editprofile');
 });
+Route::get('/page', function () {   
+    return view('/page/page');
+});
