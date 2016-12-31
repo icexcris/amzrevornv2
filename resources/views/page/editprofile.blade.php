@@ -11,20 +11,10 @@
 	<div class="row">
       <!-- left column -->
       <div class="col-md-3">
-           <div class="card hovercard">
-        <div class="card-background">
-            <img class="card-bkimg" alt="" src="http://lorempixel.com/100/100/people/9/">
-            <!-- http://lorempixel.com/850/280/people/9/ -->
-        </div>
-        <div class="useravatar">
-            <img alt="" src="{{ Auth::user()->avatar }}">
-        </div>
-        <div class="card-info"> <span class="card-title">{{ Auth::user()->name }}</span>
 
-        </div>
-    </div>
-          <input type="file" class="form-control">
-        </div>
+      <div>
+         
+
   
       
       <!-- edit form column -->
