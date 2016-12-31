@@ -588,3 +588,21 @@ nav {
     max-height: 18px;
     line-height: 3px;
 }
+/* Fixed navbar */
+body {
+    padding-top: 90px;
+}
+/* General sizing */
+ul.dropdown-lr {
+  width: 300px;
+}
+
+/* mobile fix */
+@media (max-width: 768px) {
+  .dropdown-lr h3 {
+    color: #eee;
+  }
+  .dropdown-lr label {
+    color: #eee;
+  }
+}
