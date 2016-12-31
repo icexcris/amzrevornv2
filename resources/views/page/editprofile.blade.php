@@ -1,22 +1,28 @@
 @extends('layouts.master')
 @section('content') 
-<div class="container">
+<div class="row">
+      <div class="col-md-12">
+            
+
+<div class="panel panel-white post panel-shadow">
+<div class="container-fluid">
     <h1>Edit Profile</h1>
   	<hr>
 	<div class="row">
       <!-- left column -->
       <div class="col-md-3">
-         <div class="card hovercard">
-       
+           <div class="card hovercard">
+        <div class="card-background">
+            <img class="card-bkimg" alt="" src="http://lorempixel.com/100/100/people/9/">
+            <!-- http://lorempixel.com/850/280/people/9/ -->
+        </div>
         <div class="useravatar">
-        <img alt="" src="{{ Auth::user()->avatar }}">
-       </div>
-       </div>
+            <img alt="" src="{{ Auth::user()->avatar }}">
+        </div>
+        <div class="card-info"> <span class="card-title">{{ Auth::user()->name }}</span>
 
-
-
-          <h6>Upload a different photo...</h6>
-          
+        </div>
+    </div>
           <input type="file" class="form-control">
         </div>
   
@@ -76,10 +82,10 @@
             <div class="col-md-6">
               <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-default">
-                    <input type="radio" name="gender" value="male" /> Male
+                    <input type="radio" name="gender" value="male" /><i class="fa fa-male"></i>
                 </label>
                 <label class="btn btn-default">
-                    <input type="radio" name="gender" value="female" /> Female
+                    <input type="radio" name="gender" value="female" /><i class="fa fa-female"></i>
                 </label>
                
             </div>
@@ -102,6 +108,8 @@
   </div>
 </div>
 <hr>
-
+</div>
+</div>
+</div>
 
 @endsection
