@@ -15,9 +15,9 @@
 
 				<p class="footer-links">
 					
-					<a href="{{ asset('/contact') }}">About us</a>
+					<a href="{{ asset('/page') }}">About us</a>
 					·
-					<a href="{{ asset('/contact') }}">Privacy Policy</a>
+					<a href="{{ asset('/page') }}">Privacy Policy</a>
 					·
 					<a href="#">Rss</a>
 					·

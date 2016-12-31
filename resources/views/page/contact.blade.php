@@ -10,7 +10,7 @@
  <div class="panel panel-white post panel-shadow">
           
           <fieldset>
-             <h1 class="text-center">Contact us</h3>
+             <h1 class="text-center">Contact us</h1>
        <hr>
         <div class="col-md-10 col-md-offset-1">
        <form class="form-horizontal" action="" method="post">
