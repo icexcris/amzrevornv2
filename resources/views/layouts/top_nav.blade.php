@@ -77,7 +77,7 @@
                         <li class="divider navbar-login-session-bg"></li>
                 
                   <li>
-                  <a href="#">Account Settings 
+                  <a href="{{ url('/editprofile') }}">Account Settings 
                   <span class="glyphicon glyphicon-cog pull-right">
                   </span>
                   </a>

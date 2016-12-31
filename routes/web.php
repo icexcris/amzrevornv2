@@ -52,3 +52,6 @@ Route::get('/contact', function () {
 Route::get('/profile', function () {   
     return view('/page/profile');
 });
+Route::get('/editprofile', function () {   
+    return view('/page/editprofile');
+});
