@@ -125,17 +125,59 @@
 
                   </div>
                   <div class="form-group">
-                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                   <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                            
+
+                            
+                                <input placeholder="Nume" id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
+
+                                @if ($errors->has('name'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                                @endif
+                            
+                        </div>
                   </div>
                   <div class="form-group">
-                    <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                    <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                           
+
+                            
+                                <input placeholder="Email" id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
+
+                                @if ($errors->has('email'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            
+                        </div>
                   </div>
                   <div class="form-group">
-                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                     <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                            
+
+                        
+                                <input placeholder="Password" id="password" type="password" class="form-control" name="password" required>
+
+                                @if ($errors->has('password'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
+                            
+                        </div>
                   </div>
                   <div class="form-group">
-                    <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
-                  </div>
+                
+                           
+
+                           
+                                <input placeholder="Retype password" id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                            
+                        </div>
+                  
                   <div class="form-group">
                     <div class="row">
                       <div class="col-xs-6 col-xs-offset-3">
@@ -231,7 +273,7 @@
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="text-center">
-                                                <a class="btn btn-danger" href="{{ url('/password/reset') }}">
+                                                <a class="form-control btn btn-danger" href="{{ url('/password/reset') }}">
                                     Forgot Your Password?
                                 </a>
                                                 </div>
