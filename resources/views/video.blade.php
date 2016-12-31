@@ -3,8 +3,11 @@
 
 <div class="container bootstrap snippet">
     <div class="col-md-8">
+
         <div class="col-sm-12">
+
             <div class="panel panel-white post panel-shadow">
+            
                 <div class="post-heading">
                  <a href="{{ url('/showvideo') }}" >
                      <h4>Video title</h4>
