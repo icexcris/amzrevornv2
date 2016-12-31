@@ -582,3 +582,9 @@ nav {
     -webkit-border-radius:0 !important;
 }
 
+.btn-newpost{
+    margin-top: 9px;
+    margin-bottom: 5px;
+    max-height: 18px;
+    line-height: 3px!important;
+}

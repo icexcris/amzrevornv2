@@ -51,9 +51,11 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         @if(Auth::check())
+<button type="button" class="btn btn-danger navbar-btn">Upload</button>
+
         <li class="dropdown">
-
-
+                   
+                  
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="fa fa-user"></span> <strong> {{ Auth::user()->name }}</strong></a>
                   <ul class="dropdown-menu">
                   <li>
