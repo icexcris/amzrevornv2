@@ -27,15 +27,27 @@
                 <div class="post-description">
                     
                     <p>Post descripsion dnsmasd,massdsddmsamasasmdmsa.dmamdsamdmasmdmasmmasmdasmmsamsmaasmmassammam</p>
+                     <hr>
+                     <div>
+                <span class="label label-site">Category:</span> <span class="label label-default">July</span>
+                 </div>
+                   <div>
+                 <span class="label label-site">Tag:</span> <span class="label label-default">Updates</span> <span class="label label-default">July</span>
+                 <span class="label label-default">Image</span> <span class="label label-default">Updates</span> <span class="label label-default">July</span>
+                 </div>
+             <hr>
+           
                     <div class="stats">
                        
                         <!-- Go to www.addthis.com/dashboard to customize your tools --> 
                         <div class="addthis_inline_share_toolbox"></div>
                  </div>
-                </div>
+                <hr>
+                 </div>
 
         <div class="row">
         <div class="col-md-12">
+
     <div class="col-md-6">
                     <div class="post-heading">
                         <button href="#" type="button" class="btn btn-md btn-info pull-left"><i class="fa fa-arrow-left fa-2x"></i> Previous article</button>

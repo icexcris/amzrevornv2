@@ -606,3 +606,10 @@ ul.dropdown-lr {
     color: #eee;
   }
 }
+.label-site {
+  background-color: #46A28D;
+}
+.label-site[href]:hover,
+.label-site[href]:focus {
+  background-color: #5e5e5e;
+}
