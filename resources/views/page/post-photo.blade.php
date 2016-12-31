@@ -33,6 +33,15 @@
                 <div class="post-description">
                     
                     <p>Put here your foto description</p>
+                     <hr>
+                     <div>
+                <span class="label label-site">Category:</span> <span class="label label-default">July</span>
+                 </div>
+                   <div>
+                 <span class="label label-site">Tag:</span> <span class="label label-default">Updates</span> <span class="label label-default">July</span>
+                 <span class="label label-default">Image</span> <span class="label label-default">Updates</span> <span class="label label-default">July</span>
+                 </div>
+             <hr>
                     <div class="stats">
                         <a href="#" class="btn btn-default">
                             <i class="fa fa-arrow-up icon"></i>
