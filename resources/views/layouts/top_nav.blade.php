@@ -99,7 +99,8 @@
                         <ul class="dropdown-menu dropdown-lr animated flipInX" role="menu">
                             <div class="col-lg-12">
                                 <div class="text-center"><h3><b>Register</b></h3></div>
-                <form id="ajax-register-form" action="http://phpoll.com/register/process" method="post" role="form" autocomplete="off">
+                <form id="ajax-register-form" action="{{ url('/register') }}" method="post" role="form" autocomplete="off">
+                {{ csrf_field() }}
                     <div class="form-group">
                     <button type="button" class="btn btn-md btn-info btn-block">
                                 Twitter
@@ -142,17 +143,21 @@
                       </div>
                     </div>
                   </div>
-                                    <input type="hidden" class="hide" name="token" id="token" value="7c6f19960d63f53fcd05c3e0cbc434c0">
+                                   
                 </form>
                             </div>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="http://phpoll.com/login" class="dropdown-toggle" data-toggle="dropdown">Log In <span class="caret"></span></a>
+                        <a href="{{ url('/login') }}" class="dropdown-toggle" data-toggle="dropdown">Log In <span class="caret"></span></a>
+                         
                         <ul class="dropdown-menu dropdown-lr animated slideInRight" role="menu">
                             <div class="col-lg-12">
                                 <div class="text-center"><h3><b>Log In</b></h3></div>
-                                <form id="ajax-login-form" action="http://phpoll.com/login/process" method="post" role="form" autocomplete="off">
+
+                                <form id="ajax-login-form" action="{{ url('/login') }}" method="post" role="form" autocomplete="off">
+                                
+                                
                                 <div class="form-group">
                     <button type="button" class="btn btn-md btn-info btn-block">
                                 Twitter
@@ -176,16 +181,40 @@
                     </h5>
 
                   </div>
-                                    <div class="form-group">
-                                        
-                                        <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="off">
-                                    </div>
+                  <div class="form-group">
+<form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
+                       
+{{ csrf_field() }}
+                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                            
+
+                   
+
+                                <input placeholder="Email" id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+
+                                @if ($errors->has('email'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            
+                        </div>
+
 
                                     <div class="form-group">
-                                      
-                                        <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" autocomplete="off">
-                                    </div>
+                                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                            
 
+                            
+                                <input placeholder="Password" id="password" type="password" class="form-control" name="password" required>
+
+                                @if ($errors->has('password'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                                               </div>
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-xs-7">
@@ -202,14 +231,15 @@
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="text-center">
-                                                <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-danger" value="Recover Password">
-                                                    
+                                                <a class="btn btn-danger" href="{{ url('/password/reset') }}">
+                                    Forgot Your Password?
+                                </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <input type="hidden" class="hide" name="token" id="token" value="a465a2791ae0bae853cf4bf485dbe1b6">
-                                </form>
+
+                                                                </form>
                             </div>
                         </ul>
                     </li>
