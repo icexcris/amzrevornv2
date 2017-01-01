@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
   @include('cookieConsent::index')
+  <meta name="theme-color" content="#46A28D">
+  <link rel="icon" sizes="192x192" href="{{asset('images/fav.ico')}}">
   <link rel="shortcut icon" type="image/png" href="{{asset('images/fav.ico')}}"/>
   <link href=" {{asset('css\font-awesome.css')}}" rel="stylesheet" type="text/css">
     <meta charset="utf-8">

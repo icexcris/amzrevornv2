@@ -32,6 +32,7 @@
             <li class="top-tw"><a href="#"><i class="fa fa-twitter"></i></a></li>
             <li class="top-gp"><a href="#"><i class="fa fa-google-plus"></i></a></li>
             <li class="top-yt"><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li class="top-pt"><a href="#"><i class="fa fa-pinterest"></i></a></li>
           </ul>
         </li>
 
@@ -95,7 +96,7 @@
                 </li>        @else
 
                 <li class="dropdown">
-                        <a href="http://phpoll.com/register" class="dropdown-toggle" data-toggle="dropdown">Register <span class="caret"></span></a>
+                        <a href="http://phpoll.com/register" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a>
                         <ul class="dropdown-menu dropdown-lr animated flipInX" role="menu">
                             <div class="col-lg-12">
                                 <div class="text-center"><h3><b>Register</b></h3></div>
@@ -191,7 +192,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="{{ url('/login') }}" class="dropdown-toggle" data-toggle="dropdown">Log In <span class="caret"></span></a>
+                        <a href="{{ url('/login') }}" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-key" aria-hidden="true"></i> Log In</a>
                          
                         <ul class="dropdown-menu dropdown-lr animated slideInRight" role="menu">
                             <div class="col-lg-12">

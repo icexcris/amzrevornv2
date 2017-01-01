@@ -11,8 +11,20 @@
 	<div class="row">
       <!-- left column -->
       <div class="col-md-3">
+      <div class="row">
+<center>
+      <h3>Avatar</h3>
+      
+       <div class="useravatar" class="text-center">
+            <img id="avatar" alt=""  width="100" height="100" class="img-circle" src="{{ Auth::user()->avatar }}">
+            <input class="hide" id="avatarchose" type="file">
+            </div>
+        </center>
+      </div>
+      </div>
 
-      <div>
+
+      
          
 
   
@@ -101,5 +113,6 @@
 </div>
 </div>
 </div>
+
 
 @endsection
