@@ -21,9 +21,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="#"><i class="fa fa-home"></i> <span class="sr-only">(current)</span></a></li>
-        <li><a href="{{ url('/news') }}">News</a></li>
-        <li><a href="{{ url('/photo') }}">Photos</a></li>
-        <li><a href="{{ url('/video') }}">Video</a></li>
+        <li><a href="{{ url('/news') }}"><i class="fa fa-newspaper-o" aria-hidden="true"></i> News</a></li>
+        <li><a href="{{ url('/photo') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i> Photos</a></li>
+        <li><a href="{{ url('/video') }}"><i class="fa fa-play" aria-hidden="true"></i> Video</a></li>
 
         <li class="dropdown social-menu">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-share-alt"></i> FOLLOW US</a>
@@ -50,10 +50,12 @@
         </li>
         
       </ul>
+
+ 
+
       <ul class="nav navbar-nav navbar-right">
         @if(Auth::check())
-         <li><a class="button btn-danger" href="{{ url('/upload') }}"><i class="fa fa-plus" aria-hidden="true"></i> Upload</a></li>
-
+         <li><a href="{{ url('/upload') }}"><i class="fa fa-plus" aria-hidden="true"></i> Upload</a></li>
         <li class="dropdown">
                    
                   
