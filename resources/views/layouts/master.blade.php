@@ -12,6 +12,7 @@
     <title>@yield('title', 'Amuzament')</title>
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/web.css') }}" rel="stylesheet">
+
     
 
     <!--[if lt IE 9]>
