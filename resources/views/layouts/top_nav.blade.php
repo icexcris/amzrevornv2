@@ -28,11 +28,11 @@
         <li class="dropdown social-menu">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-share-alt"></i> FOLLOW US</a>
           <ul class="dropdown-menu">
-            <li class="top-fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li class="top-tw"><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li class="top-gp"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            <li class="top-yt"><a href="#"><i class="fa fa-youtube"></i></a></li>
-            <li class="top-pt"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            <li class="top-fb"><a href="https://www.facebook.com/viatabunerele"><i class="fa fa-facebook"></i></a></li>
+            <li class="top-tw"><a href="https://twitter.com/amuzament_net"><i class="fa fa-twitter"></i></a></li>
+            <li class="top-gp"><a href="https://plus.google.com/b/104022084792298942505/+Amuzamentnet"><i class="fa fa-google-plus"></i></a></li>
+            <li class="top-yt"><a href="http://www.youtube.com/c/Amuzamentnet"><i class="fa fa-youtube"></i></a></li>
+            <li class="top-pt"><a href="https://pinterest.com/amuzamentnet"><i class="fa fa-pinterest"></i></a></li>
           </ul>
         </li>
 

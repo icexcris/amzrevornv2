@@ -4,11 +4,11 @@
 
 			<div class="footer-right">
 
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-google-plus"></i></a>
-				<a href="#"><i class="fa fa-youtube"></i></a>
-				<a href="#"><i class="fa fa-pinterest"></i></a>
+				<a href="https://www.facebook.com/viatabunerele"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/amuzament_net"><i class="fa fa-twitter"></i></a>
+				<a href="https://plus.google.com/b/104022084792298942505/+Amuzamentnet"><i class="fa fa-google-plus"></i></a>
+				<a href="http://www.youtube.com/c/Amuzamentnet"><i class="fa fa-youtube"></i></a>
+				<a href="https://pinterest.com/amuzamentnet"><i class="fa fa-pinterest"></i></a>
 
 			</div>
 
