@@ -58,3 +58,6 @@ Route::get('/editprofile', function () {
 Route::get('/page', function () {   
     return view('/page/page');
 });
+Route::get('/upload', function () {   
+    return view('/page/upload');
+});

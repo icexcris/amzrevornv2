@@ -52,7 +52,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         @if(Auth::check())
-<button type="button" class="btn btn-danger navbar-btn">Upload</button>
+         <li><a class="button btn-danger" href="{{ url('/upload') }}"><i class="fa fa-plus" aria-hidden="true"></i> Upload</a></li>
 
         <li class="dropdown">
                    
@@ -96,7 +96,7 @@
                 </li>        @else
 
                 <li class="dropdown">
-                        <a href="http://phpoll.com/register" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a>
+                        <a href="{{ url('/register') }}" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a>
                         <ul class="dropdown-menu dropdown-lr animated flipInX" role="menu">
                             <div class="col-lg-12">
                                 <div class="text-center"><h3><b>Register</b></h3></div>

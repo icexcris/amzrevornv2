@@ -47,6 +47,6 @@
 
 
 
-
+<button type="button" class="btn btn-site btn-block">I want more posts</button> 
 </div>
 @endsection
