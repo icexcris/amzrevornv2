@@ -677,8 +677,19 @@ a {
     margin-left:2px;
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color:#fff;
     background-color: #46A28D;
 }
 .navbar-default .navbar-nav>li>a {
     color: #fff;
+}
+.btnice-up-nav
+{
+  color:#46a28d!important;
+  background-color: #fff!important;
+}
+.btnice-up-nav:hover
+{
+  color:#0C7960!important;
+  background-color:#fff!important;
 }

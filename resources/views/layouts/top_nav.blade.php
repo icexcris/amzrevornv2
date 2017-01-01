@@ -55,7 +55,7 @@
 
       <ul class="nav navbar-nav navbar-right">
         @if(Auth::check())
-         <li><a href="{{ url('/upload') }}"><i class="fa fa-plus" aria-hidden="true"></i> Upload</a></li>
+         <li><a class="btnice-up-nav" href="{{ url('/upload') }}"><i class="fa fa-plus" aria-hidden="true"></i> Upload</a></li>
         <li class="dropdown">
                    
                   
