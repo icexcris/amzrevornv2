@@ -16,11 +16,38 @@
 
   <!-- Tab panes -->
 <div class="tab-content">
-  <div role="tabpanel" class="tab-pane fade in active" id="home">...</div>
+  <div role="tabpanel" class="tab-pane fade in active" id="home">
+  <div class="row">
+  <div class="col-md-10 col-md-offset-1">
+  <div class="form-group">
+              
+              <input  placeholder="Title" type="text" name="title" id="title" class="form-control" required="required">
+            </div>
+   <div class="form-group">
+          
+
+
+                          </div>
+   <div class="form-group">
+              
+              <input  placeholder="Categories" type="text" name="title" id="title" class="form-control" required="required">
+            </div>
+   <div class="form-group">
+              
+              <input  placeholder="Tag" type="text" name="title" id="title" class="form-control" required="required">
+            </div>
+
+           <div class="form-group">
+              
+              <textarea placeholder="Description" name="description" id="description" cols="30" rows="3" class="form-control"></textarea>
+            </div>
+  </div>
+  </div>
+  </div>
   <div role="tabpanel" class="tab-pane fade" id="profile">...</div>
   
 </div>
-        <div class="col-md-10 col-md-offset-1">
+        
        
 
 </div>
