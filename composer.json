@@ -13,7 +13,8 @@
         "twbs/bootstrap": "^3.3",
         "ckeditor/ckeditor": "^4.6",
         "unisharp/laravel-ckeditor": "^4.5",
-        "artesaos/seotools": "^0.10.0"
+        "artesaos/seotools": "^0.10.0",
+        "laravel/socialite": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

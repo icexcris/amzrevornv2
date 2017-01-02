@@ -182,6 +182,7 @@ return [
         Spatie\CookieConsent\CookieConsentServiceProvider::class,
         Unisharp\Ckeditor\ServiceProvider::class,
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
 
     ],
 
@@ -236,6 +237,7 @@ return [
         'OpenGraph' => Artesaos\SEOTools\Facades\OpenGraph::class,
         'Twitter'   => Artesaos\SEOTools\Facades\TwitterCard::class,
         'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
     ],
 

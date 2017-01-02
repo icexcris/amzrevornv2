@@ -24,14 +24,14 @@
                         </div>
                         <div class="col-md-4">
                              
-                            <button type="button" class="btn btn-md btn-danger btn-block">
+                            <button  type="button" class="btn btn-md btn-danger btn-block">
                                 Google+
                             </button>
                         </div>
                         <div class="col-md-4">
                              
-                            <button type="button" class="btn btn-md btn-primary btn-block">
-                                Facebook
+                            <button> <a href="{{ url('/auth/facebook') }}" type="button" class="btn btn-md btn-primary btn-block">
+                                Facebook</a>
                             </button>
                         </div>
                     </div>

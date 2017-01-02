@@ -34,5 +34,19 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
-
+    'github' => [
+        'client_id' =>  env('GITHUB_CLIENT_ID'),
+        'client_secret' => env('GITHUB_CLIENT_SECRET'),
+        'redirect' => env('GITHUB_REDIRECT'),
+    ],
+    'facebook' => [
+        'client_id' =>  env('1654202244899812'),
+        'client_secret' => env('5a43277ffe743cea9fa164d53192cc2f'),
+        'redirect' => env('FACEBOOK_REDIRECT'),
+    ],
+    'google' => [
+        'client_id' =>  env('GOOGLE_APP_ID'),
+        'client_secret' => env('GOOGLE_APP_SECRET'),
+        'redirect' => env('GOOGLE_REDIRECT'),
+    ]
 ];

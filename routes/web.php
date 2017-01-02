@@ -61,3 +61,6 @@ Route::get('/page', function () {
 Route::get('/upload', function () {   
     return view('/page/upload');
 });
+
+Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
+Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
