@@ -519,8 +519,8 @@ nav {
     padding-top: 0;
     overflow: hidden;
     text-align: center;
-    background-color: #fff;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #46a28d;
+   
 }
 .card.hovercard .card-background {
     height: 130px;
@@ -561,8 +561,8 @@ nav {
     padding:0 5px;
     font-size: 20px;
     line-height: 1;
-    color: #262626;
-    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    background-color: #0c7960;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;

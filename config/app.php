@@ -181,6 +181,7 @@ return [
         Ipunkt\LaravelAnalytics\AnalyticsServiceProvider::class,
         Spatie\CookieConsent\CookieConsentServiceProvider::class,
         Unisharp\Ckeditor\ServiceProvider::class,
+        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
 
     ],
 
@@ -231,6 +232,9 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
         'Analytics' => Ipunkt\LaravelAnalytics\AnalyticsFacade::class,
+        'SEOMeta'   => Artesaos\SEOTools\Facades\SEOMeta::class,
+        'OpenGraph' => Artesaos\SEOTools\Facades\OpenGraph::class,
+        'Twitter'   => Artesaos\SEOTools\Facades\TwitterCard::class,
 
     ],
 

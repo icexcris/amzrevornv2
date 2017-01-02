@@ -12,8 +12,6 @@
 
     <div class="card hovercard">
         <div class="card-background">
-            <img class="card-bkimg" alt="" src="http://lorempixel.com/100/100/people/9/">
-            <!-- http://lorempixel.com/850/280/people/9/ -->
         </div>
         <div class="useravatar">
             <img alt="" src="{{ Auth::user()->avatar }}">
@@ -29,18 +27,18 @@
 
   <!-- Nav tabs -->
   <ul class="nav nav-pills nav-justified" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+    <li role="presentation" class="active"><a href="#postuser" aria-controls="postuser" role="tab" data-toggle="tab">Post</a></li>
+    <li role="presentation"><a href="#coments" aria-controls="coments" role="tab" data-toggle="tab">Coments</a></li>
+    <li role="presentation"><a href="#vote" aria-controls="vote" role="tab" data-toggle="tab">vote</a></li>
+    
   </ul>
 
   <!-- Tab panes -->
 <div class="tab-content">
   <div role="tabpanel" class="tab-pane fade in active" id="home">...</div>
-  <div role="tabpanel" class="tab-pane fade" id="profile">...</div>
-  <div role="tabpanel" class="tab-pane fade" id="messages">...</div>
-  <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
+  <div role="tabpanel" class="tab-pane fade" id="coments">...</div>
+  <div role="tabpanel" class="tab-pane fade" id="vote">...</div>
+  
 </div>
 
 </div>
