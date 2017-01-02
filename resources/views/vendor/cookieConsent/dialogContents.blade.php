@@ -1,6 +1,9 @@
+
+<div class="alert alert-success alert-dismissable fade in">
 <div class="js-cookie-consent cookie-consent">
 
     <span class="cookie-consent__message">
+
         {!! trans('cookieConsent::texts.message') !!}
     </span>
 
@@ -8,4 +11,5 @@
         {{ trans('cookieConsent::texts.agree') }}
     </button>
 
+</div>
 </div>

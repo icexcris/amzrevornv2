@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  @include('cookieConsent::index')
   <meta name="theme-color" content="#46A28D">
   <link rel="icon" sizes="192x192" href="{{asset('images/fav.ico')}}">
   <link rel="shortcut icon" type="image/png" href="{{asset('images/fav.ico')}}"/>
@@ -22,11 +21,13 @@
   </head>
   <body>
     @include('layouts.top_nav')
+     @include('cookieConsent::index')
 
     <div class="container">
       @yield('content')
     </div>
-
+ 
+ 
     @include('layouts.footer')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
