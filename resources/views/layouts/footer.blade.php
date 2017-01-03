@@ -18,11 +18,11 @@
 					
 					<a href="{{ asset('/page') }}">About us</a>
 					·
-					<a href="{{ asset('/page') }}">Privacy Policy</a>
+					<a href="#">Privacy Policy</a>
 					·
 					<a href="#">Rss</a>
 					·
-					<a href="#">Sitemaps</a>
+					<a href="{{ asset('/sitemap.xml') }}">Sitemaps</a>
 					·
 					<a href="{{ asset('/contact') }}">Contact</a>
 				</p>

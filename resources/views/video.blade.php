@@ -42,15 +42,12 @@
                     </div>
                 
             </div>
-<center>
 
-         <button type="button" class="btn btn-site btn-block">I want more posts</button> 
-</nav>
-</center>
         </div>
 
     </div>
       </div>
+    
   
 @include('layouts.sidebar-video')
       
