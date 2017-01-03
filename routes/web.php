@@ -55,13 +55,12 @@ Route::get('/profile', function () {
 Route::get('/editprofile', function () {   
     return view('/page/editprofile');
 });
-Route::get('/page', function () {   
-    return view('/page/page');
-});
+
 Route::get('/upload', function () {   
     return view('/page/upload');
 });
 
+Route::get('/page/{slug}',          ['as' => 'page', 'uses' => 'PageController@show']);
 
 Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
