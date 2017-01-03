@@ -18,21 +18,21 @@
 
                         <div class="col-md-4">
                              
-                            <button type="button" class="btn btn-md btn-info btn-block">
-                                Twitter
-                            </button>
+                            <a href="{{ url('/auth/twitter') }}" type="button" class="btn btn-md btn-info btn-block">
+                                Twitter</a>
+                            
                         </div>
                         <div class="col-md-4">
                              
-                            <button  type="button" class="btn btn-md btn-danger btn-block">
-                                Google+
-                            </button>
+                             <a  href="{{ url('/auth/google') }}" type="button" class="btn btn-md btn-danger btn-block"> Google+</a>
+                               
+                            
                         </div>
                         <div class="col-md-4">
                              
-                            <button> <a href="{{ url('/auth/facebook') }}" type="button" class="btn btn-md btn-primary btn-block">
+                             <a href="{{ url('/auth/facebook') }}"  type="button" class="btn btn-md btn-primary btn-block">
                                 Facebook</a>
-                            </button>
+                           
                         </div>
                     </div>
                 </div>

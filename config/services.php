@@ -35,18 +35,18 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
     'github' => [
-        'client_id' =>  env('GITHUB_CLIENT_ID'),
-        'client_secret' => env('GITHUB_CLIENT_SECRET'),
-        'redirect' => env('GITHUB_REDIRECT'),
+        'client_id' =>  env('1654202244899812'),
+        'client_secret' => env('6111ebef6d4ecca488c9a43c651e4c7507839a4e'),
+        'redirect' => env('http://localhost:8000/auth/github/callback'),
     ],
     'facebook' => [
-        'client_id' =>  env('1654202244899812'),
-        'client_secret' => env('5a43277ffe743cea9fa164d53192cc2f'),
-        'redirect' => env('FACEBOOK_REDIRECT'),
+         'client_id' => env('FACEBOOK_CLIENT_ID'),
+    'client_secret' => env('FACEBOOK_CLIENT_SECRET'),
+    'redirect' => env('CALLBACK_URL'),
     ],
     'google' => [
-        'client_id' =>  env('GOOGLE_APP_ID'),
-        'client_secret' => env('GOOGLE_APP_SECRET'),
-        'redirect' => env('GOOGLE_REDIRECT'),
+        'client_id' =>  env('614489611495-bak039osl1auag8tm64c0r1sjp932f56.apps.googleusercontent.com'),
+        'client_secret' => env('ycn3LktQ52jtv7jVBaKx2gB3'),
+        'redirect' => env('http://localhost:8000/auth/google/callback'),
     ]
 ];
