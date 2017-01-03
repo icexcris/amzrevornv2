@@ -183,7 +183,7 @@ return [
         Unisharp\Ckeditor\ServiceProvider::class,
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
-        Helldar\Sitemap\SitemapServiceProvider::class,
+        
 
     ],
 

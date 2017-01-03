@@ -15,7 +15,7 @@
         "unisharp/laravel-ckeditor": "^4.5",
         "artesaos/seotools": "^0.10.0",
         "laravel/socialite": "^2.0",
-        "andrey-helldar/sitemap": "^1.0"
+        
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
