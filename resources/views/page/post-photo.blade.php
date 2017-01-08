@@ -61,7 +61,7 @@
                             
                        
                     </div>
-<div class="stats">
+                    <div class="stats">
                     <div class="addthis_inline_share_toolbox"></div>
                     </div>
                      
@@ -69,7 +69,7 @@
                 <div class="post-footer">
                 <img src="{{ asset('/images/unnamed.png') }}" alt="Smiley face" class="img img-responsive">
                 <hr>
-                <form action="" method="POST">
+                <form action="{{ route('page.upload.post') }}" method="POST">
                     {{ csrf_field() }}
                     <div class="input-group"> 
                         <input class="form-control" placeholder="Add a comment" type="text" name="comment">
@@ -80,7 +80,9 @@
                                 <i class="fa fa-edit"></i>
                             </label> -->
                             <a href="#" id="trigFI"><i class="fa fa-edit"></i></a>  
+
                         </span>
+                    
                     </div>
                 </form>
                     
