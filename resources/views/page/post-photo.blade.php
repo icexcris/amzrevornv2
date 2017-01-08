@@ -1,6 +1,5 @@
 @extends('layouts.master')
 @section('content') 
-
 <div class="container bootstrap snippet">
     <di class="col-md-8">
         <div class="row">
@@ -10,8 +9,9 @@
                     <div class="post-heading">
                         <div class="pull-left meta">
                             <div class="title h5">
-                            <h4>Foto title</h4><a href="#"><b>By Brian cartelly</b></a></div>
-                            <h6 class="text-muted time">5 seconds ago</h6>
+                            <h4>{{ $post->title }}</h4>
+                            <a href="#"> By <b>{{ $post->createdBy->name }}</b></a></div>
+                            <h6 class="text-muted time">{{ $post->created_at->diffForHumans() }}</h6>
                         </div>
                     </div>                                 
                 </div>
@@ -28,30 +28,36 @@
                 </div>  
 
                 <div class="post-image">
-                    <img src="http://lorempixel.com/400/200/city/2/" class="image" alt="image post">
+                    <img src="{{ asset('uploads/pictures/'.$post->picture) }}" class="image" alt="image post">
                 </div>
                 <div class="post-description">
                     
-                    <p>Put here your foto description</p>
-                     <hr>
+                    @if($post->description)
+                        <p>{!! $post->description !!}</p>
+                        <hr>
+                    @endif
+
                      <div>
-                <span class="label label-site">Category:</span> <span class="label label-default">July</span>
+                <span class="label label-site">Category:</span> <span class="label label-default">{{ $category->name }}</span>
                  </div>
-                   <div>
-                 <span class="label label-site">Tag:</span> <span class="label label-default">Updates</span> <span class="label label-default">July</span>
-                 <span class="label label-default">Image</span> <span class="label label-default">Updates</span> <span class="label label-default">July</span>
-                 </div>
-             <hr>
+                    <div>
+                        <span class="label label-site">Tag:</span> 
+                        @foreach($post->getTags as $tag)
+                            <span class="label label-default">{{ $tag->tag }}</span> 
+                        @endforeach
+                  </div>
+                    <hr>
                     <div class="stats">
-                        <a href="#" class="btn btn-default">
+                        <a href="#" class="btn btn-default voteUp {{ (count($vote) && $vote->type == 1) ? 'active' : '' }}" data-id="{{ $post->id }}" data-type="1" data-url="{{ route('post.vote', [$post->id, 1]) }}">
                             <i class="fa fa-arrow-up icon"></i>
                         </a>
-                        <a href="#" class="btn btn-default">
+                        <a href="#" class="btn btn-default voteDown  {{ (count($vote) && $vote->type == 0) ? 'active' : '' }}" data-id="{{ $post->id }}" data-type="0" data-url="{{ route('post.vote', [$post->id, 0]) }}">
                             <i class="fa fa-arrow-down icon"></i></a>
                             <a href="#" class="btn btn-default">
-                            <i class="fa fa-signal icon"></i>100d0</a>
-                            <a href="#" class="btn btn-default">
-                            <i class="fa fa-commenting-o icon"></i>1000</a>
+                            <i class="fa fa-signal icon"></i> {{ count($post->getVotes) }}</a>
+                            <a href="#comments" class="btn btn-default">
+                                <i class="fa fa-commenting-o icon"></i> {{ count($post->getComments) }}
+                            </a>
                             
                        
                     </div>
@@ -63,8 +69,10 @@
                 <div class="post-footer">
                 <img src="{{ asset('/images/unnamed.png') }}" alt="Smiley face" class="img img-responsive">
                 <hr>
+                <form action="" method="POST">
+                    {{ csrf_field() }}
                     <div class="input-group"> 
-                        <input class="form-control" placeholder="Add a comment" type="text">
+                        <input class="form-control" placeholder="Add a comment" type="text" name="comment">
                         <input type="file" id="fileupload" class="hide" name="compic">
                         <span class="input-group-addon">
                             <!-- <label for="" class="comm-picc-btn">
@@ -74,44 +82,28 @@
                             <a href="#" id="trigFI"><i class="fa fa-edit"></i></a>  
                         </span>
                     </div>
-                    <ul class="comments-list">
-                        <li class="comment">
-                            <a class="pull-left" href="#">
-                                <img class="avatar" src="http://bootdey.com/img/Content/user_3.jpg" alt="avatar">
-                            </a>
-                            <div class="comment-body">
-                                <div class="comment-heading">
-                                    <h4 class="user">Full name 1</h4>
-                                    <h5 class="time">7 minutes ago</h5>
-                                </div>
-                                <p>This is a comment bla bla bla</p>
-                            </div>
-                        </li>
-                        <li class="comment">
-                            <a class="pull-left" href="#">
-                                <img class="avatar" src="http://bootdey.com/img/Content/user_2.jpg" alt="avatar">
-                            </a>
-                            <div class="comment-body">
-                                <div class="comment-heading">
-                                    <h4 class="user">Full name 2</h4>
-                                    <h5 class="time">3 minutes ago</h5>
-                                </div>
-                                <p>This is another comment bla bla bla</p>
-                            </div>
-                        </li>
-                        <li class="comment">
-                            <a class="pull-left" href="#">
-                                <img class="avatar" src="http://bootdey.com/img/Content/user_3.jpg" alt="avatar">
-                            </a>
-                            <div class="comment-body">
-                                <div class="comment-heading">
-                                    <h4 class="user">Full name 1</h4>
-                                    <h5 class="time">10 seconds ago</h5>
-                                </div>
-                                <p>Wow! This is a comment</p>
-                            </div>
-                        </li>
-                    </ul>
+                </form>
+                    
+                    @if(count($post->getComments) == 0)
+                        <em>Be the first one to comment!</em>
+                    @else
+                        <ul class="comments-list" id="comments">
+                            @foreach($post->getComments as $comment)
+                                <li class="comment">
+                                    <a class="pull-left" href="#">
+                                        <img class="avatar" src="{{ $comment->createdBy->provider ? $comment->createdBy->avatar : 'asd' }}" alt="avatar">
+                                    </a>
+                                    <div class="comment-body">
+                                        <div class="comment-heading">
+                                            <h4 class="user">{{ $comment->createdBy->name }}</h4>
+                                            <h5 class="time">{{ $comment->created_at->diffForHumans() }}</h5>
+                                        </div>
+                                        <p>{{ $comment->content }}</p>
+                                    </div>
+                                </li>                            
+                            @endforeach
+                        </ul>
+                    @endif
                 </div>
             </div>
         </div>

@@ -22,7 +22,7 @@
       <ul class="nav navbar-nav">
         <li><a href="#"><i class="fa fa-home"></i> <span class="sr-only">(current)</span></a></li>
         <li><a href="{{ url('/news') }}"><i class="fa fa-newspaper-o" aria-hidden="true"></i> News</a></li>
-        <li><a href="{{ url('/photo') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i> Photos</a></li>
+        <li class="{{ (isset($page) && $page == 'photos' ? 'active' : '') }}"><a href="{{ url('/photos') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i> Photos</a></li>
         <li><a href="{{ url('/video') }}"><i class="fa fa-play" aria-hidden="true"></i> Video</a></li>
 
         <li class="dropdown social-menu">
@@ -55,7 +55,7 @@
 
       <ul class="nav navbar-nav navbar-right">
         @if(Auth::check())
-         <li><a class="btnice-up-nav" href="{{ url('/upload') }}"><i class="fa fa-plus" aria-hidden="true"></i> Upload</a></li>
+         <li><a class="btnice-up-nav" href="{{ route('page.upload') }}"><i class="fa fa-plus" aria-hidden="true"></i> Upload</a></li>
         <li class="dropdown">
                    
                   

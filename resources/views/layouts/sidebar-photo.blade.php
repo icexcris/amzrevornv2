@@ -6,33 +6,15 @@
                 <div class="well">
                 <img src="{{ asset('/images/adsense-ad.png') }}" alt="Smiley face" class="img img-responsive">
                     <h4>Categoris</h4>
-                   
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <ul class="list-unstyled">
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
+                                @foreach($photo_cats as $cat)
+                                    <li><a href="#">{{ $cat->name }}</a></li>
+                                @endforeach
                             </ul>
                         </div>
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled">
-
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                                <li><a href="#">Category Name</a>
-                                </li>
-                            </ul>
-                        </div>
+                
                     </div>
                     <!-- /.row -->
                 </div>

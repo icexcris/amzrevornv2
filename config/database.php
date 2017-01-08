@@ -56,7 +56,7 @@ return [
             'driver' => 'mysql',
             'host' => 'localhost',
             'port' => '3306',
-            'database' => 'amuzament_fun',
+            'database' => 'amz_vechi',
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',

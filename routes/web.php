@@ -26,16 +26,16 @@ Route::get('/blog', function () {
     return view('/page/post-blog');
 });
 
-Route::get('/news', function () {
-    return view('news');
-});
-Route::get('/showphoto', function () {
-    return view('/page/post-photo');
-});
 
-Route::get('/photo', function () {
-    return view('photo');
-});
+
+
+// Route::get('/photos', function () {
+//     return view('photos');
+// });
+
+Route::get('/photos', ['as' => 'post.photos', 'uses' => 'PostController@indexPhotos']);
+
+
 Route::get('/video', function () {
     return view('video');
 });
@@ -56,14 +56,25 @@ Route::get('/editprofile', function () {
     return view('/page/editprofile');
 });
 
-Route::get('/upload', function () {   
-    return view('/page/upload');
-});
+Route::get('/upload', ['as' => 'page.upload', 'middleware' => 'auth', 'uses' => 'PostController@upload']);
+Route::post('/upload', ['as' => 'page.upload.post', 'middleware' => 'auth', 'uses' => 'PostController@uploadPost']);
 
 Route::get('/page/{slug}',          ['as' => 'page', 'uses' => 'PageController@show']);
 
 Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
+
+Route::get('/post/{slug}/{id}', ['as' => 'post.show', 'uses'=> 'PostController@show']);
+
+Route::get('/vote/{post_id}/{type}', ['as' => 'post.vote', 'middleware' => 'auth', 'uses'=> 'PostController@vote']);
+
+Route::get('/news/{slug}/{id}', ['as' => 'post.news', 'uses'=> 'PostController@showNews']);
+
+Route::get('/news', function () {
+    return view('news');
+});
+
+Route::get('/test_move', ['uses'=> 'PostController@testMove']);
 
 
 

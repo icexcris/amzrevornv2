@@ -7,11 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     public $table = 'categories';
-    protected $fillable = ['name', 'icon', 'slug', 'parent'];
-    public $timestamps = false;
-
-    public function parentitem()
-    {
-     	return $this->belongsTo('App\Models\Category','parent');
-    }
+    protected $fillable = ['title', 'image', 'description', 'slug'];
 }

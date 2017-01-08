@@ -52,3 +52,30 @@ $(function() {
         reader.readAsDataURL(file);
     });  
 });
+
+
+/**************VOTES***************/
+$('.voteUp').on('click', function(e){
+    e.preventDefault();
+    $.ajax({
+        method: "GET",
+        url: $(this).data('url'),
+        data: {id: $(this).data('id'), type: $(this).data('type') }
+    }).done(function(){
+        $(this).addClass('active');
+        $('.voteDown').removeClass('active')
+    });
+    return false;
+});
+$('.voteDown').on('click', function(e){
+    e.preventDefault();
+    $.ajax({
+        method:"GET",
+        url: $(this).data('url'),
+       data: {id: $(this).data('id'), type: $(this).data('type') }
+      }).done(function(){
+        $(this).addClass('active');
+        $('.voteUp').removeClass('active')        
+    });
+    return false;
+});

@@ -16,11 +16,11 @@
 
 				<p class="footer-links">
 					
-					<a href="{{ asset('/page') }}">About us</a>
+					<a href="{{ route('page', ['about_us']) }}">About us</a>
 					·
-					<a href="#">Privacy Policy</a>
+					<a href="{{ route('page', ['privacy_policy']) }}">Privacy Policy</a>
 					·
-					<a href="#">Rss</a>
+					<a href="#}">Rss</a>
 					·
 					<a href="{{ asset('/sitemap.xml') }}">Sitemaps</a>
 					·
