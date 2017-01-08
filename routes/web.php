@@ -49,12 +49,10 @@ Route::get('/ck', function () {
 Route::get('/contact', function () {   
     return view('/page/contact');
 });
-Route::get('/profile', function () {   
-    return view('/page/profile');
-});
-Route::get('/editprofile', function () {   
-    return view('/page/editprofile');
-});
+Route::get('/profile', ['as' => 'user.profile', 'middleware' => 'auth', 'uses'=> 'UserController@profile']);
+    
+Route::get('/editprofile', ['as' => 'user.editprofile', 'middleware' => 'auth', 'uses'=> 'UserController@edit']);
+
 
 Route::get('/upload', ['as' => 'page.upload', 'middleware' => 'auth', 'uses' => 'PostController@upload']);
 Route::post('/upload', ['as' => 'page.upload.post', 'middleware' => 'auth', 'uses' => 'PostController@uploadPost']);

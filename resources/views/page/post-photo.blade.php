@@ -55,7 +55,7 @@
                             <i class="fa fa-arrow-down icon"></i></a>
                             <a href="#" class="btn btn-default">
                             <i class="fa fa-signal icon"></i> {{ count($post->getVotes) }}</a>
-                            <a href="#comments" class="btn btn-default">
+                            <a href="#" class="btn btn-default">
                                 <i class="fa fa-commenting-o icon"></i> {{ count($post->getComments) }}
                             </a>
                             

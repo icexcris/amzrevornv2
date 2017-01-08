@@ -15,7 +15,7 @@
                         </div>
                     </div>
                     <div class="post-image">
-                        <img src="http://lorempixel.com/400/200/city/2/" class="image" alt="image post">
+                        <img src="{{ asset('uploads/pictures/'.$post->picture) }}" class="image" alt="image post">
                     </div>
                     <div class="post-description">
                         
@@ -25,10 +25,11 @@
                             </a>
                             <a href="#" class="btn btn-default">
                                 <i class="fa fa-arrow-down icon"></i></a>
-                                <a href="#" class="btn btn-default">
-                                <i class="fa fa-signal icon"></i>100d0</a>
-                                <a href="#" class="btn btn-default">
-                                <i class="fa fa-commenting-o icon"></i>1000</a>
+                                  <a href="#" class="btn btn-default">
+                            <i class="fa fa-signal icon"></i> {{ count($post->getVotes) }}</a>
+                                 <a href="#" class="btn btn-default">
+                                <i class="fa fa-commenting-o icon"></i> {{ count($post->getComments) }}
+                            </a>
                                 
                            
                         </div>

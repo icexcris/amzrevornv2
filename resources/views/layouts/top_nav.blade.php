@@ -22,7 +22,7 @@
       <ul class="nav navbar-nav">
         <li><a href="#"><i class="fa fa-home"></i> <span class="sr-only">(current)</span></a></li>
         <li><a href="{{ url('/news') }}"><i class="fa fa-newspaper-o" aria-hidden="true"></i> News</a></li>
-        <li class="{{ (isset($page) && $page == 'photos' ? 'active' : '') }}"><a href="{{ url('/photos') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i> Photos</a></li>
+        <li class="{{ (isset($page) && $page == 'photos' ? 'active' : '') }}"><a href="{{ route('post.photos') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i> Photos</a></li>
         <li><a href="{{ url('/video') }}"><i class="fa fa-play" aria-hidden="true"></i> Video</a></li>
 
         <li class="dropdown social-menu">
@@ -74,7 +74,7 @@
                                         <p class="text-left"><strong>{{ Auth::user()->name }}</strong></p>
                                         <p class="text-left small">{{ Auth::user()->email }}</p>
                                         <p class="text-left">
-                                            <a href="{{ url('/profile') }}" class="btn btn-site btn-block btn-sm">Profile</a>
+                                            <a href="{{ route('user.profile') }}" class="btn btn-site btn-block btn-sm">Profile</a>
                                         </p>
                                     </div>
                                 </div>
@@ -83,7 +83,7 @@
                         <li class="divider navbar-login-session-bg"></li>
                 
                   <li>
-                  <a href="{{ url('/editprofile') }}">Account Settings 
+                  <a href="{{ route('user.editprofile') }}">Account Settings 
                   <span class="fa fa-cog pull-right">
                   </span>
                   </a>
