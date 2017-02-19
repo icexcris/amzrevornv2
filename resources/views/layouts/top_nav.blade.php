@@ -16,17 +16,51 @@
       &nbsp;
 
       </div>
+      
+      
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+       &nbsp;
+        <a href="#"><i class="fa fa-home"  style="font-size:48px;color:#FFFFFF"></i> <span class="sr-only">(current)</span></a>
+         &nbsp;
+      </ul>
       <ul class="nav navbar-nav">
-        <li><a href="#"><i class="fa fa-home"></i> <span class="sr-only">(current)</span></a></li>
-        <li><a href="{{ url('/news') }}"><i class="fa fa-newspaper-o" aria-hidden="true"></i> News</a></li>
+        
+        <li class="{{ (isset($page) && $page == 'news' ? 'active' : '') }}"><a href="{{ route('post.news') }}"><i class="fa fa-newspaper-o" aria-hidden="true"></i> News</a></li>
         <li class="{{ (isset($page) && $page == 'photos' ? 'active' : '') }}"><a href="{{ route('post.photos') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i> Photos</a></li>
-        <li><a href="{{ url('/video') }}"><i class="fa fa-play" aria-hidden="true"></i> Video</a></li>
+        <li class="{{ (isset($page) && $page == 'videos' ? 'active' : '') }}"><a href="{{ route('post.videos') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i> Videos</a></li>
 
-        <li class="dropdown social-menu">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-share-alt"></i> FOLLOW US</a>
+       
+        
+      </ul>
+
+ 
+
+      <ul class="nav navbar-nav navbar-right">
+      
+        <li class="li-form">
+                    <!--  SEARCH -->
+                    <form role="search" id="search-nav" method="get" action="#">
+                        <input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Rechercher :">
+
+                    <button type="reset">
+                            <span class="fa fa-close">
+                                <span class="sr-only">Close</span>
+                            </span>
+                    </button>
+                    <button type="submit" class="search-submit">
+                            <span class="fa fa-search">
+                                <span class="sr-only">Rechercher</span>
+                            </span>
+                    </button>
+                </form>               
+                </li>
+
+       <li class="dropdown social-menu">
+
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-share-alt"></i></a>
           <ul class="dropdown-menu">
             <li class="top-fb"><a href="https://www.facebook.com/viatabunerele"><i class="fa fa-facebook"></i></a></li>
             <li class="top-tw"><a href="https://twitter.com/amuzament_net"><i class="fa fa-twitter"></i></a></li>
@@ -36,52 +70,22 @@
           </ul>
         </li>
 
-        <li class="dropdown search-menu">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search"></i> SEARCH</a>
-          <ul class="dropdown-menu">
-          <li>
-            <form action="">
-              <input type="text" class="form-control" placeholder="Search">
-              <button type="submit" class="btn btn-site">Submit</button>
-            </form>
-          </li>
-            
-          </ul>
-        </li>
         
-      </ul>
 
- 
-
-      <ul class="nav navbar-nav navbar-right">
         @if(Auth::check())
          <li><a class="btnice-up-nav" href="{{ route('page.upload') }}"><i class="fa fa-plus" aria-hidden="true"></i> Upload</a></li>
-        <li class="dropdown">
-                   
-                  
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="fa fa-user"></span> <strong> {{ Auth::user()->name }}</strong></a>
-                  <ul class="dropdown-menu">
-                  <li>
-                  
-                            <div class="navbar-login">
-                                <div class="row">
-                                    <div class="col-lg-4">
-                                        <p class="text-center">
-                                            <span class="glyphicon glyphicon-user icon-size"></span>
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-8">
-                                        <p class="text-left"><strong>{{ Auth::user()->name }}</strong></p>
-                                        <p class="text-left small">{{ Auth::user()->email }}</p>
-                                        <p class="text-left">
-                                            <a href="{{ route('user.profile') }}" class="btn btn-site btn-block btn-sm">Profile</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="divider navbar-login-session-bg"></li>
-                
+        <li class="dropdown">      
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"> <span class="fa fa-user"></span> <strong> {{ Auth::user()->name }}</strong></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li>
+                  <a href="{{ route('user.profile') }}">Profile 
+                  <span class="fa fa-user pull-right">
+                  </span>
+                  </a>
+                  </li>
+                   <li class="divider"></li>
+                  <li><a href="{{ route('dashboard') }}"><i class="fa fa-btn fa-dashboard"></i>Dashboard</a></li>
+                 <li class="divider"></li>
                   <li>
                   <a href="{{ route('user.editprofile') }}">Account Settings 
                   <span class="fa fa-cog pull-right">

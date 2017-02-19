@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Comments extends Model
 {
     protected $table = 'comments';
-    protected $fillable = ['post_id', 'user_id', 'content', 'picture', 'status'];
+    protected $fillable = ['post_id', 'user_id', 'content', 'picture', 'status', 'type'];
 
 	public function createdBy()
     {
